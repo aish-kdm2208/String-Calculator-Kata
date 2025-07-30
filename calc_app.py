@@ -1,2 +1,3 @@
 def add(string):
-    pass
+    if string=="":
+        return 0
