@@ -3,10 +3,10 @@ def add(string):
         return 0
     
     elif string.startswith('//'):
-        delimiter = ';'
-        simple_string = string.replace('\n', delimiter)
-        list = simple_string.split(delimiter)
-        num=list[2:]
+        delimiter_part, string = string.split('\n',1)
+        delimit = delimiter_part[2:]
+        simple_string = string.replace('\n', delimit)
+        num = simple_string.split(delimit)
 
     else:
         string = string.replace("\n", ",")
