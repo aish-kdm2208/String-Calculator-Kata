@@ -18,6 +18,10 @@ class TestCalculator(unittest.TestCase):
         input=calc_app.add("1\n4,1")
         self.assertEqual(input, 6)
 
+    def test_delimiter(self):
+        input=calc_app.add("//;\n1;2")
+        self.assertEqual(input, 3)
+
     
 
 if __name__ == '__main__':
