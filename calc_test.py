@@ -13,6 +13,11 @@ class TestCalculator(unittest.TestCase):
     def test_addtion(self):
         input=calc_app.add("1,2")
         self.assertEqual(input, 3)
+
+    def test_newline(self):
+        input=calc_app.add("1/n4,1")
+        self.assertEqual(input, 6)
+
     
 
 if __name__ == '__main__':
