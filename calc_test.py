@@ -22,6 +22,10 @@ class TestCalculator(unittest.TestCase):
         input=calc_app.add("//;\n1;2")
         self.assertEqual(input, 3)
 
+    def test_negative_no_error(self):
+        with self.assertRaisesRegex(Exception, "Numbers cannot be negative"):
+            calc_app.add("1,-2")
+
     
 
 if __name__ == '__main__':
