@@ -15,7 +15,7 @@ class TestCalculator(unittest.TestCase):
         self.assertEqual(input, 3)
 
     def test_newline(self):
-        input=calc_app.add("1/n4,1")
+        input=calc_app.add("1\n4,1")
         self.assertEqual(input, 6)
 
     
